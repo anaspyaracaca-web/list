@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Little Coffee List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <p class="small-heading">A LITTLE MOMENT OF PEACE</p>
+
+            <h1>Little Coffee List</h1>
+
+            <p class="subtitle">
+                Slow mornings, warm coffee & little things to do.
+            </p>
+        </div>
+
+        <div class="input-area">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Write something on your mind..."
+            >
+
+            <button onclick="addTask()">Add Task +</button>
+        </div>
+
+        <div class="list-heading">
+            <h2>Today's Little Tasks</h2>
+            <span>☕</span>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <p class="footer">
+            MADE WITH LOVE & A LITTLE COFFEE
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
