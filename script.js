@@ -102,5 +102,11 @@ function deleteTask(index) {
 
     displayTasks();
 }
+function resetTasks() {
 
+    tasks = [];
+
+    displayTasks();
+
+}
 

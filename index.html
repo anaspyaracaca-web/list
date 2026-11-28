@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,42 +13,122 @@
 
 <body>
 
-    <div class="container">
+    <div class="background-overlay"></div>
 
-        <div class="header">
-            <p class="small-heading">A LITTLE MOMENT OF PEACE</p>
+    <main class="page">
 
-            <h1>Little Coffee List</h1>
+        <header class="topbar">
+            <a href="#" class="brand">
+                <span class="brand-icon">L.</span>
+                <span>little coffee list</span>
+            </a>
 
-            <p class="subtitle">
-                Slow mornings, warm coffee & little things to do.
+            <p class="topbar-note">
+                YOUR DAILY MOMENT OF CALM
             </p>
-        </div>
+        </header>
 
-        <div class="input-area">
-            <input
-                type="text"
-                id="taskInput"
-                placeholder="Write something on your mind..."
-            >
+        <section class="hero">
 
-            <button onclick="addTask()">Add Task +</button>
-        </div>
+            <div class="hero-content">
 
-        <div class="list-heading">
-            <h2>Today's Little Tasks</h2>
-            <span>☕</span>
-        </div>
+                <p class="eyebrow">
+                    <span class="eyebrow-line"></span>
+                    A LITTLE MOMENT OF PEACE
+                </p>
 
-        <ul id="taskList"></ul>
+                <h1>
+                    Little Coffee
+                    <span>List.</span>
+                </h1>
 
-        <p class="footer">
-            MADE WITH LOVE & A LITTLE COFFEE
-        </p>
+                <p class="hero-description">
+                    Slow mornings, warm coffee
+                    and little things to do.
+                </p>
 
-    </div>
+                <p class="hero-note">
+                    A soft place to gather your thoughts
+                    and make room for what matters.
+                </p>
+
+                <div class="coffee-caption">
+                    <span class="caption-line"></span>
+                    <span>BREW SLOWLY. LIVE SOFTLY.</span>
+                </div>
+
+            </div>
+
+            <div class="hero-photo">
+
+                <div class="photo-caption">
+                    <span>01 THE MORNING RITUAL</span>
+                    <span>☕</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="task-section">
+
+            <div class="task-top">
+
+                <div>
+                    <p class="section-label">
+                        YOUR DAILY NOTES
+                    </p>
+
+                    <h2>Today's Little Tasks</h2>
+                </div>
+
+                <p class="task-date">
+                    A fresh little start.
+                </p>
+
+            </div>
+
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Write something on your mind..."
+                >
+
+                <button class="add-button" onclick="addTask()">
+                    Add Task <span>+</span>
+                </button>
+
+            </div>
+
+            <ul id="taskList"></ul>
+
+            <div class="reset-area">
+
+                <button class="reset-button" onclick="resetTasks()">
+                    ↺ Reset List
+                </button>
+
+            </div>
+
+        </section>
+
+        <footer class="footer">
+
+            <p>MADE WITH LOVE & A LITTLE COFFEE</p>
+
+            <span class="footer-heart">♥</span>
+
+            <p>TAKE YOUR TIME.</p>
+
+        </footer>
+
+    </main>
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
+
